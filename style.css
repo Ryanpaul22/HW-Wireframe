@@ -1,9 +1,8 @@
 * {
     box-sizing: border-box;
     text-align: center;
-    padding: 20px;
-    margin: 5px;
 }
+
 
 body {
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -11,6 +10,7 @@ body {
     background: #777;
     width: 960px;
     font-size: 18px;
+    margin: 0 auto;
 }
 
 Header, Nav, Section, Aside, Footer {
@@ -19,6 +19,7 @@ Header, Nav, Section, Aside, Footer {
 
 header {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -28,6 +29,8 @@ nav {
 article {
     color: #ebebeb;
     background: #777;
+    padding: 9px;
+    margin-top: 10px;
 }
 
 h1, p {
@@ -36,21 +39,33 @@ h1, p {
 }
 
 section {
-    width: 495px;
-}
-
-#left {
     float: left;
-    width: 30%;
+    width: 48%;
+    padding: 20px;
 }
 
-#right {
+aside {
     float: right;
-    width: 30%;
+    width: 48%;
 }
 
 footer {
     width: 100%;
-    float: bottom;
+    clear: both;
+}
+
+header, nav, footer {
+    padding: 20px;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
+div ::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
